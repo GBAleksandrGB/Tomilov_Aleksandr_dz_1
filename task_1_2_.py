@@ -29,4 +29,4 @@ for el in numbers:
 
     if sum_number % 7 == 0:
         sum += sum_number
-        print(sum)
+print(sum)
