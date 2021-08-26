@@ -19,6 +19,7 @@ for el in numbers:
 
 print(sum(sum_numbers))
 
+sum = 0
 for el in numbers:
     sum_number = 0
     el = el + 17
@@ -28,4 +29,5 @@ for el in numbers:
         el = el // 10
 
     if sum_number % 7 == 0:
-        print(sum(sum_numbers))
+        sum += sum_number
+        print(sum)
