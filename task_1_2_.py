@@ -8,13 +8,14 @@ print(numbers)
 
 for el in numbers:
     sum_number = 0
+    number = el
 
-    while el != 0:
+    while el:
         sum_number = sum_number + el % 10
         el = el // 10
 
     if sum_number % 7 == 0:
-        sum_numbers.append(sum_number)
+        sum_numbers.append(number)
 
 print(sum(sum_numbers))
 
@@ -22,11 +23,12 @@ sum = 0
 for el in numbers:
     sum_number = 0
     el = el + 17
+    number = el
 
     while el != 0:
         sum_number = sum_number + el % 10
         el = el // 10
 
     if sum_number % 7 == 0:
-        sum += sum_number
+        sum += number
 print(sum)
